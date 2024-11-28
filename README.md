@@ -11,3 +11,8 @@ A abordagem envolve o uso de um modelo preditivo treinado para identificar quais
 - **`modelo01.ipynb`**: Contém o código principal para treinar e testar o modelo LGBM Regressor.
 - **`database_treat.ipynb`**: Contém o código de tratamento da base inicial por meio de PySpark.
 - **`requirements.txt`**: Lista as dependências do projeto.
+
+
+## Observações
+
+O modelo apresenta um possível overfitting. Para minimizá-lo poderíamos ter feito uma feature engineering mais robusta, como por exemplo ter criado cluster com KMeans antes de rodar o LGBM Regressor, assim como testar com mais dados. Além disso uma otimização de hiperparâmetro docando na redução de overfitting também seria válida. Com mais dados e mais possibilidades de feature engineering também seria possível a utilização de um modelo em rede neural com maior flexibilidade para evitar o overfitting. 
